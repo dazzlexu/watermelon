@@ -1,0 +1,53 @@
+
+select {
+    font-size: 30px;
+    margin: 30px 320px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px #888888;
+    font-family: "Times New Roman", Times, serif;
+}
+/* this part is the CSS of Card */
+
+.card{
+    box-shadow: 2px 2px 2px #888888;
+    color: white;
+    font-family: "Garamond", Times, serif;
+    text-align: center;
+    opacity:0.8;
+}
+.text-center{
+    height: 250px !important;
+}
+.card-body .card-header {
+    height: 65px;
+    font-size: 20px;
+    line-height: 100%;
+    font-family: "Times New Roman", Times, serif;
+}
+/* this part is the CSS of Chart */
+
+.card-header h3{
+    color: black;
+    font-size: 20px;
+}
+.card-text {
+    height: 300px;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.show-card {
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.chart{
+    width: 400px;
+    height: 400px;
+}
+.card-body .h3 .h4 {   
+    text-shadow: 2px 1px 4px gray;
+}

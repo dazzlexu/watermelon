@@ -1,0 +1,42 @@
+/*.motionGraph{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    padding-left: 200px;*/
+/*    padding-top: 100px;*/
+/*}*/
+
+.motionGraph{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph1,.graph2,.graph3{
+    width: 200px;
+    height: 200px;
+}
+p .text{
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin-top: 150px;
+}
+
+/*.motionGraph .graph2{*/
+/*    margin-top: -55px;*/
+/*}*/
+
+/*p.text{*/
+/*    margin-left: 300px;*/
+/*    width: 600px;*/
+/*    height: 130px;*/
+/*    font-size: 18px;*/
+/*}*/
+/*strong{*/
+/*    font-weight: 900;*/
+/*    color: rgb(197, 16, 16);*/
+/*    font-size: larger;*/
+/*}*/
+

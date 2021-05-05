@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/base.css"/>
+    <link rel="stylesheet" href="../static/prevention.css"/>
+    <title>Project Two Covid Ed</title>
+</head>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="{{ url_for('routes.index') }}">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_EYmWTa.json" background="transparent"
+                           speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('routes.index') }}">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('routes.data') }}"><i class="fas fa-globe"></i><span> global data</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('routes.symptoms') }}"><i class="fas fa-virus"></i><span> Symptoms</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('routes.prevention') }}"><i class="fas fa-user-shield"></i>
+                        <span>Prevention</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('routes.evaluation') }}"><i
+                            class="fas fa-graduation-cap"></i><span> Evaluation</span></a>
+                </li>
+            </ul>
+            {% if s == 0 %}
+                <button class="btn btn-secondary my-2" type="submit"><a href="{{ url_for('routes.login') }}">Login</a>
+                </button>
+            {% else: %}
+                <button class="btn btn-secondary my-2" type="submit"><a href="{{ url_for('routes.logout') }}">Logout</a>
+                </button>
+            {% endif %}
+        </div>
+    </nav>
+</header>
+
+<main>
+    <article class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_oGbdoA.json"
+                                   background="transparent"
+                                   speed="1" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Take a mask</h5>
+                        <p>Do not spit everywhere. Wrap the mouth and nose secretions with paper towel and discard them
+                            in the
+                            dustbin with cover.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_Rq4Htd.json"
+                                   background="transparent"
+                                   speed="1" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Take a mask</h5>
+                    <p>Do not spit everywhere. Wrap the mouth and nose secretions with paper towel and discard them in
+                        the
+                        dustbin with cover.</p>
+                </div>
+                <div class="carousel-item">
+                    <lottie-player src="https://assets3.lottiefiles.com/private_files/lf30_yQtj4O.json"
+                                   background="transparent"
+                                   speed="1" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Take a mask</h5>
+                        <p>Do not spit everywhere. Wrap the mouth and nose secretions with paper towel and discard them
+                            in the
+                            dustbin with cover.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_cbkdyqfh.json"
+                                   background="transparent"
+                                   speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Take a mask</h5>
+                        <p>Do not spit everywhere. Wrap the mouth and nose secretions with paper towel and discard them
+                            in the
+                            dustbin with cover.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_AxmMba.json"
+                                   background="transparent"
+                                   speed="1" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Take a mask</h5>
+                        <p>Do not spit everywhere. Wrap the mouth and nose secretions with paper towel and discard them
+                            in the
+                            dustbin with cover.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_3ueg3po6.json"
+                                   background="transparent"
+                                   speed="1" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Take a mask</h5>
+                        <p>Do not spit everywhere. Wrap the mouth and nose secretions with paper towel and discard them
+                            in the
+                            dustbin with cover.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_xY9XcO.json"
+                                   background="transparent"
+                                   speed="1" style="width: 500px; height: 500px;" loop autoplay></lottie-player>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Take a mask</h5>
+                        <p>Do not spit everywhere. Wrap the mouth and nose secretions with paper towel and discard them
+                            in the
+                            dustbin with cover.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_jsog8p.json"
+                                   background="transparent"
+                                   speed="1" style="width: 600px; height: 600px;" loop autoplay></lottie-player>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Take a mask</h5>
+                        <p>Do not spit everywhere. Wrap the mouth and nose secretions with paper towel and discard them
+                            in the
+                            dustbin with cover.</p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </article>
+</main>
+
+
+<footer class="bg-primary">
+    <div class="container">
+        <span>CopyRight &copy; Jinshuai Fu & Kanghao Xu</span>
+    </div>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</html>

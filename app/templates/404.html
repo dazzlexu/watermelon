@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>404 error</title>
+    <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet" href="../static/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/base.css">
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="{{ url_for('routes.index') }}">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_EYmWTa.json" background="transparent"
+          speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="{{ url_for('routes.index') }}">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('routes.data') }}"><i class="fas fa-globe"></i><span> global data</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('routes.symptoms') }}"><i class="fas fa-virus"></i><span> Symptoms</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('routes.prevention') }}"><i class="fas fa-user-shield"></i> <span>Prevention</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('routes.evaluation') }}"><i class="fas fa-graduation-cap"></i><span> Evaluation</span></a>
+          </li>
+        </ul>
+        <button class="btn btn-secondary my-2" type="submit"><a href="{{ url_for('routes.login') }}">Login</a> </button>
+      </div>
+    </nav>
+  </header>
+<main >
+    <div class="container">
+    <p style="font-size: 60px; padding-top: 40px; color: white">404 No Such pages</p>
+    </div>
+</main>
+    <footer class="bg-primary">
+    <div class="container">
+      <span>CopyRight &copy; Jinshuai Fu & Kanghao Xu</span>
+    </div>
+  </footer>
+</body>
+</html>

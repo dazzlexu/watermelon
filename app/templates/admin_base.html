@@ -1,0 +1,19 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="{{ url_for('routes.index') }}">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_EYmWTa.json" background="transparent"
+                           speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('routes.admin') }}"><i class="fas fa-user-shield"></i>
+                        <span>Home</span></a>
+                </li>
+            </ul>
+            <button class="btn btn-secondary my-2" type="submit"><a href="{{ url_for('routes.login') }}">Out</a>
+            </button>
+        </div>
+    </nav>
+</header>

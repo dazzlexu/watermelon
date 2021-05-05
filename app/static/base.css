@@ -1,0 +1,57 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+main{
+    min-height: 90vh;
+    background-image: url(./pic/coronavirus-banner.jpeg);
+    background-size: cover;
+}
+.navbar{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.nav-item{
+    font-size: 15px;
+    padding-left: 15px;
+}
+.navbar-brand{
+    height: 100px;
+    width: 100px;
+}
+.nav-item:hover{
+    transform: scale(1.2);
+}
+.btn{
+    display: block;
+    padding-top: 5px;
+    border-radius: 20%;
+    height: 40px;
+}
+article h1{
+    font-size: 50px;
+    font-family: nyt-cheltenham, georgia, serif;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+footer{
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    font-size: 12px;
+    padding-top: -50px;
+}
+p.text{
+    background: rgba(0, 0, 0, 0.404);
+    font-size: 20px;
+    color: white;
+    margin-top: 50px;
+}
+footer div{
+    margin: 0 auto;
+    text-align: center;
+}

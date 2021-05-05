@@ -1,0 +1,19 @@
+#accordion{
+    padding-top: 10px;
+    width: 1000px;
+    opacity: 0.8;
+}
+.card-header{
+    height: 60px;
+    padding-top: 5px;
+}
+.card-body{
+    font-size: 10px;
+}
+.btn{
+    font-size: 10px;
+    border:none;
+}
+.adjust{
+    height: 80px;
+}
